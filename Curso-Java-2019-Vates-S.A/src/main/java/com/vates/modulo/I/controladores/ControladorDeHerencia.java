@@ -10,7 +10,7 @@ public class ControladorDeHerencia {
 
         ClaseC claseC = new ClaseC();
         //System.out.println(claseC.Apellido);
-        
+
         claseC.getCantidadDeProcesosPublicos();
     }
 }
