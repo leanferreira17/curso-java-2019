@@ -4,7 +4,7 @@ import com.vates.modulo.I.privado.ClaseConMiembrosPrivados;
 import com.vates.modulo.I.protegido.ClaseConMiembrosProtegidos;
 import com.vates.modulo.I.publico.ClaseConMiembrosPublicos;
 
-public class ControladorPrincipal extends ClaseConMiembrosProtegidos {
+public class ControladorPrincipal {
 
     public static void main(String[] args) {
         /*
@@ -26,6 +26,6 @@ public class ControladorPrincipal extends ClaseConMiembrosProtegidos {
         * Extendemos de ClaseConMiembrosProtegidos y vemos el comportamiento
         * */
         ControladorPrincipal controladorPrincipal = new ControladorPrincipal();
-        controladorPrincipal.imprimirDatos();
+        //controladorPrincipal.imprimirDatos();
     }
 }
