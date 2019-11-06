@@ -4,9 +4,9 @@ public class EjemploDeComposicionDesdeLaSubClase {
     public static void main(String[] args) {
         Vehiculo vehiculo = new Vehiculo();
         Auto auto = new Auto();
-        System.out.println(vehiculo.toString());
+        //System.out.println(vehiculo.toString());
         vehiculo.setAuto(auto);
-        //System.out.println(vehiculo.getAuto().getCantidadDeRuedas());
+        System.out.println(vehiculo.getAuto().getCantidadDeRuedas());
     }
 }
 
@@ -41,5 +41,6 @@ class Auto extends Vehiculo{
 }
 
 class Avion extends Vehiculo{
+
 
 }
