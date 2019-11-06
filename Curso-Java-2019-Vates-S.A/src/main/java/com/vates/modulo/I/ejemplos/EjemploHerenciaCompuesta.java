@@ -2,7 +2,7 @@ package com.vates.modulo.I.ejemplos;
 
 public class EjemploHerenciaCompuesta {
     public static void main(String[] args) {
-        Destornillador destornillador = new Destornillador();
+        Padre padre = new Padre();
     }
 }
 
@@ -11,9 +11,9 @@ public class EjemploHerenciaCompuesta {
  * superclase. En la superclase hay una instanciación de la clase hija que llama al constructor de la clase padre
  * generando un bucle infinito.
  */
-class Destornillador {
-    private DestornilladorPlano destornilladorPlano = new DestornilladorPlano();
+class Padre {
+    private Hija hija = new Hija();
 }
 
-class DestornilladorPlano extends Destornillador {
+class Hija extends Padre {
 }

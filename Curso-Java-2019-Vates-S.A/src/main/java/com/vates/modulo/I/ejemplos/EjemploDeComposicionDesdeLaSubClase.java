@@ -16,7 +16,7 @@ class Vehiculo {
     private Auto auto;
 
     public Vehiculo() {
-        System.out.println("Construì un Vehiculo");
+        System.out.println("Construí un Vehiculo");
     }
 
     public Auto getAuto() {
