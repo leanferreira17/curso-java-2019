@@ -15,6 +15,7 @@ public class ControladorDeAviones {
         System.out.println(carga.compareTo(Categoria.LIGERO));*/
 
         Avion avion = new Avion("Boeing", Categoria.COMERCIAL, Clase.E);
+        avion.getClase().setE("nuevo valor AAA");
         System.out.println(MessageFormat.format(
                 "Marca: {0}, Categoria: {1}, Clase: {2}, Clase/prefijo: {3}, Clase/id: {4}",
                 avion.getMarca(),
@@ -22,6 +23,9 @@ public class ControladorDeAviones {
                 avion.getClase(),
                 avion.getClase().getPrefijo(),
                 avion.getClase().getClase()));
+
+        Avion avion1 = new Avion("Airbus", Categoria.EXPERIMENTAL, Clase.E);
+        System.out.println(avion1.getClase().getPrefijo());
     }
 }
 

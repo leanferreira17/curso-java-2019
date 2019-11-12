@@ -22,4 +22,8 @@ public enum Clase {
     public int getClase() {
         return this.clase;
     }
+
+    public void setE(String nuevoValor) {
+        this.prefijo = nuevoValor;
+    }
 }

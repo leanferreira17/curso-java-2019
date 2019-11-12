@@ -11,14 +11,14 @@ public class ControladorDeExcepciones {
     public static void main(String[] args) {
 
         try {
-            //dividirPorCero();
             darDeAltaNuevoEmpleado();
-        } catch (RuntimeException e) {
-            System.out.println("Excepción lanzada. Detalle: " + e);
-        } catch (SueldoNegativoException sne) {
-            System.out.println(sne);
-        } finally {
-            System.out.println("Bloque finally alcanzado.");
+        } catch (ArithmeticException e) {
+            System.out.println(e);
+        } catch (SueldoNegativoException e) {
+            System.out.println(e);
+        }
+        finally {
+            //return ex;
         }
     }
 
@@ -33,7 +33,7 @@ public class ControladorDeExcepciones {
 
     private static void darDeAltaNuevoEmpleado() throws SueldoNegativoException {
         Empleado empleado = new Programador();
-        empleado.setSueldoBasico(-987);
+        empleado.setSueldoBasico(987999999);
         RRHH.darDeAltaNuevoEmpleadoParaLaCompania(empleado);
     }
 }
