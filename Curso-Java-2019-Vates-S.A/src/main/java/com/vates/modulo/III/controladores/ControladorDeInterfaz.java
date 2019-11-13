@@ -12,7 +12,7 @@ public class ControladorDeInterfaz {
         presionables.add(new Mensaje());
         presionables.add(new Imagen());
 
-        presionables.forEach(presionable -> System.out.println(presionable.presionar()));
+        presionables.forEach(presionable -> System.out.println(presionable.getMensaje()));
     }
 }
 
@@ -23,6 +23,11 @@ class BotonApagar implements Presionable {
     public String presionar(){
         return this.mensaje;
     }
+
+    @Override
+    public String getMensaje() {
+        return mensaje;
+    }
 }
 
 class Mensaje implements Presionable {
@@ -32,6 +37,11 @@ class Mensaje implements Presionable {
     public String presionar() {
         return this.mensaje;
     }
+
+    @Override
+    public String getMensaje() {
+        return valorNominal;
+    }
 }
 
 class Imagen implements Presionable{
@@ -40,5 +50,11 @@ class Imagen implements Presionable{
     @Override
     public String presionar() {
         return this.mensaje;
+    }
+
+    @Override
+    public String getMensaje() {
+        //valorNominal = "asd";
+        return valorNominal;
     }
 }
