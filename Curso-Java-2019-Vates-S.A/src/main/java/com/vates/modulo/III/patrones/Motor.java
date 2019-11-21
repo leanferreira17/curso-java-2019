@@ -1,21 +1,18 @@
 package com.vates.modulo.III.patrones;
 
-public class Builder {
-    public static void main(String[] args) {
-        Motor motor = new Motor();
-        Motor motor1 = motor.build().build()
-    }
-}
-
-class Motor implements IMotor {
+public class Motor {
     private int caballosDeFuerza;
     private float capacidadDeCombustible;
     private float peso;
     private String modelo;
     private boolean esNuevo;
 
-    public Motor() {
-
+    public Motor(int caballosDeFuerza, float capacidadDeCombustible, float peso, String modelo, boolean esNuevo) {
+        this.caballosDeFuerza = caballosDeFuerza;
+        this.capacidadDeCombustible = capacidadDeCombustible;
+        this.peso = peso;
+        this.modelo = modelo;
+        this.esNuevo = esNuevo;
     }
 
     public int getCaballosDeFuerza() {
@@ -57,5 +54,15 @@ class Motor implements IMotor {
     public void setEsNuevo(boolean esNuevo) {
         this.esNuevo = esNuevo;
     }
-}
 
+    @Override
+    public String toString() {
+        return "Motor{" +
+                "caballosDeFuerza=" + caballosDeFuerza +
+                ", capacidadDeCombustible=" + capacidadDeCombustible +
+                ", peso=" + peso +
+                ", modelo='" + modelo + '\'' +
+                ", esNuevo=" + esNuevo +
+                '}';
+    }
+}
