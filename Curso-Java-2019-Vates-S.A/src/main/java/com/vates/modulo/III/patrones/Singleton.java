@@ -27,13 +27,14 @@ class Messi {
         this.setCantidadDeGolesConvertidos(cantidadDeGolesConvertidos);
         this.setCantidadDeCampeonatosGanados(cantidadDeCampeonatosGanados);
         this.setPiernaHabil(piernaHabil);
+        System.out.println("Hemos creado a Messi");
     }
 
     public static Messi getSingletonInstance(int cantidadDeGolesConvertidos, int cantidadDeCampeonatosGanados, String piernaHabil) {
         if (getMessi() == null) {
             setMessi(new Messi(cantidadDeGolesConvertidos, cantidadDeCampeonatosGanados, piernaHabil));
         } else {
-            System.out.println("No se puede crear el jugador Messi, porque es unico!");
+            System.out.println("No se puede crear al jugador Messi, porque ya existe!");
         }
 
         return getMessi();
