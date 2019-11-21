@@ -13486,11 +13486,70 @@ individual.</li>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Ejemplos:">Ejemplos:<a class="anchor-link" href="#Ejemplos:">&#182;</a></h2><h3 id="Singleton">Singleton<a class="anchor-link" href="#Singleton">&#182;</a></h3><p>En ingeniería de software, singleton o instancia única es un patrón de diseño que permite restringir la creación de objetos pertenecientes a una clase o el valor de un tipo a un único objeto.</p>
 <p>Su intención consiste en garantizar que una clase solo tenga una instancia y proporcionar un punto de acceso global a ella.</p>
-<h3 id="Builder">Builder<a class="anchor-link" href="#Builder">&#182;</a></h3><p>El patrón de diseño Builder permite crear objetos que habitualmente son complejos utilizando otro objeto más simple que los construye paso por paso.</p>
+<div class="alert alert-block alert-success">
+<b>Ejemplo</b></div><h3 id="Builder">Builder<a class="anchor-link" href="#Builder">&#182;</a></h3><p>El patrón de diseño Builder permite crear objetos que habitualmente son complejos utilizando otro objeto más simple que los construye paso por paso.</p>
 <p>Este patrón Builder se utiliza en situaciones en las que debe construirse un objeto repetidas veces o cuando este objeto tiene gran cantidad de atributos y objetos asociados, y en donde usar constructores para crear el objeto no es una solución cómoda.</p>
 <p>Se trata de un patrón de diseño bastante útil también en la ejecución de test (unit test por ejemplo) en donde debemos crear el objeto con atributos válidos o por defecto.</p>
 <p>Normalmente resuelve el problema sobre decidir qué constructor utilizar. A menudo las clases tienen muchos constructores y es muy difícil mantenerlos. Es común ver constructores múltiples con distintas combinaciones de parámetros.</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-success">
+<b>Ejemplo</b></div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Maven">Maven<a class="anchor-link" href="#Maven">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Maven es una herramienta open-source, que se creó en 2001 con el objetivo de simplificar los procesos de build (compilar y generar ejecutables a partir del código fuente).
+Antes de que Maven proporcionara una interfaz común para hacer builds del software, cada proyecto solía tener a alguna persona dedicada exclusivamente a configurar el proceso de build.
+Además, los desarrolladores tenían que perder tiempo en aprender las peculiaridades de cada nuevo proyecto en el que participaban.
+Si queríamos compilar y generar ejecutables de un proyecto, teníamos que analizar qué partes de código se debían compilar, qué librerías utilizaba el código, dónde incluirlas, qué dependencias de compilación había en el proyecto…
+En el mejor de los casos, se empleaban unos pocos minutos para saber cómo hacer una build del proyecto. En el peor de los casos, el proceso de build era tan complejo que un desarrollador podía tardar horas en saber cómo compilar y generar los ejecutables a partir del código.
+Ahora, la build de cualquier proyecto Maven, independientemente de sus módulos, dependencias, librerías…consiste simplemente en ejecutar el comando mvn install.
+Por otra parte, antes de Maven, cada vez que salía una nueva versión de un analizador estático de código, de un framework de pruebas unitarias (como JUnit) o cualquier librería, había que parar todo el desarrollo para reajustar el proceso de build a las nuevas necesidades.
+Y… ¿cómo se ejecutaban las pruebas? ¿Cómo se generaban informes? Sin Maven, en cada proyecto esto se hacía de distinta manera.
+Pero Maven, es mucho más que una herramienta que hace builds del código.</p>
+<p>Como vemos, Maven simplifica mucho el proceso de build del código, permitiéndonos compilar cualquier tipo de proyecto de la misma manera, librándonos de todas las dificultades que hay por detrás.
+Pero lo cierto es que Maven es mucho más que una herramienta que hace builds del código.
+Podríamos decir, que Maven es una herramienta capaz de gestionar un proyecto software completo, desde la etapa en la que se comprueba que el código es correcto, hasta que se despliega la aplicación, pasando por la ejecución de pruebas y generación de informes y documentación.
+Para ello, en Maven se definen tres ciclos de build del software con una serie de etapas diferenciadas. Por ejemplo el ciclo por defecto tiene las etapas de:</p>
+<ul>
+<li>Validación (validate): Validar que el proyecto es correcto.</li>
+<li>Compilación (compile).</li>
+<li>Test (test): Probar el código fuente usando un framework de pruebas unitarias.</li>
+<li>Empaquetar (package): Empaquetar el código compilado y transformarlo en algún formato tipo .jar o .war.</li>
+<li>Pruebas de integración (integration-test): Procesar y desplegar el código en algún entorno donde se puedan ejecutar las pruebas de integración.</li>
+<li>Verificar que el código empaquetado es válido y cumple los criterios de calidad (verify).</li>
+<li>Instalar el código empaquetado en el repositorio local de Maven, para usarlo como dependencia de otros proyectos (install).</li>
+<li>Desplegar el código a un entorno (deploy).
+Para poder llevar a cabo alguna de estas fases en nuestro código, tan solo tendremos que ejecutar mvn y el nombre de la fase (la palabra que puse entre paréntesis). Además van en cadena, es decir, si empaquetamos el código (package), Maven ejecutará desde la fase de validación (validate) a empaquetación (package). Así de simple.
+Por otra parte, con Maven la gestión de dependencias entre módulos y distintas versiones de librerías se hace muy sencilla. En este caso, solo tenemos que indicar los módulos que componen el proyecto, o qué librerías utiliza el software que estamos desarrollando en un fichero de configuración de Maven del proyecto llamado POM.
+Además, en el caso de las librerías, no tienes ni tan siquiera que descargarlas a mano. Maven posee un repositorio remoto (Maven central) donde se encuentran la mayoría de librerías que se utilizan en los desarrollos de software, y que la propia herramienta se descarga cuando sea necesario.</li>
+</ul>
+<p>Digamos que Maven aporta una semántica común al proceso de build y desarrollo del software.
+Incluso, establece una estructura común de directorios para todos los proyectos. Por ejemplo el código estará en raíz del proyecto/src/main/java, los recursos en raíz del proyecto/src/main/resources. Los tests están en raíz del proyecto /src/test etc.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-success">
+<b>Ejemplo</b></div>
 </div>
 </div>
 </div>
