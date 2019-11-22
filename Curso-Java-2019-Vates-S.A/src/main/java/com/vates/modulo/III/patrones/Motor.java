@@ -1,11 +1,14 @@
 package com.vates.modulo.III.patrones;
 
+import com.google.api.client.http.HttpRequest;
+
 public class Motor {
     private int caballosDeFuerza;
     private float capacidadDeCombustible;
     private float peso;
     private String modelo;
     private boolean esNuevo;
+    private HttpRequest httpRequest;
 
     public Motor(int caballosDeFuerza, float capacidadDeCombustible, float peso, String modelo, boolean esNuevo) {
         this.caballosDeFuerza = caballosDeFuerza;

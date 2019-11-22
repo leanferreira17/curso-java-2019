@@ -4,13 +4,16 @@ public class Singleton {
     public static void main(String[] args) {
 
         // el verdadero
-        Messi leonel = Messi.getSingletonInstance(400, 27, "Izquierda");
+        Messi.getSingletonInstance(400, 27, "Izquierda");
         // Pedro, el primo
-        Messi pedro = Messi.getSingletonInstance(0, 0, "Derecha");
+        Messi.getSingletonInstance(0, 0, "Derecha");
+        Messi.getSingletonInstance(67, 89, "Ambas");
+        Messi.getSingletonInstance(1, 0, "Derecha");
+        Messi.getSingletonInstance(1789, 190, "Derecha");
 
-        // Leonel y Pedro son referencias a un único objeto de la clase Messi
-        System.out.println(leonel.getCantidadDeCampeonatosGanados());
-        System.out.println(pedro.getCantidadDeCampeonatosGanados());
+        for (Messi messi : Messi.getMessis()) {
+            System.out.println(messi.toString());
+        }
     }
 }
 
@@ -18,7 +21,18 @@ class Messi {
     private int cantidadDeGolesConvertidos;
     private int cantidadDeCampeonatosGanados;
     private String piernaHabil;
-    private static Messi messi;
+    private static Messi[] messis = new Messi[4];
+
+    @Override
+    public String toString() {
+        return "Messi{" +
+                "cantidadDeGolesConvertidos=" + cantidadDeGolesConvertidos +
+                ", cantidadDeCampeonatosGanados=" + cantidadDeCampeonatosGanados +
+                ", piernaHabil='" + piernaHabil + '\'' +
+                '}';
+    }
+
+    private static int contador = 0;
 
     /*
     el constructor es privado para no permitir que se cree otra instancia del objeto
@@ -30,22 +44,15 @@ class Messi {
         System.out.println("Hemos creado a Messi");
     }
 
-    public static Messi getSingletonInstance(int cantidadDeGolesConvertidos, int cantidadDeCampeonatosGanados, String piernaHabil) {
-        if (getMessi() == null) {
-            setMessi(new Messi(cantidadDeGolesConvertidos, cantidadDeCampeonatosGanados, piernaHabil));
-        } else {
-            System.out.println("No se puede crear al jugador Messi, porque ya existe!");
+    public static void getSingletonInstance(int cantidadDeGolesConvertidos, int cantidadDeCampeonatosGanados, String piernaHabil) {
+        if (contador < getMessis().length) {
+            getMessis()[contador] = new Messi(cantidadDeGolesConvertidos, cantidadDeCampeonatosGanados, piernaHabil);
         }
-
-        return getMessi();
+        contador++;
     }
 
-    public static Messi getMessi() {
-        return messi;
-    }
-
-    public static void setMessi(Messi messi) {
-        Messi.messi = messi;
+    public static Messi[] getMessis() {
+        return messis;
     }
 
     public int getCantidadDeGolesConvertidos() {
