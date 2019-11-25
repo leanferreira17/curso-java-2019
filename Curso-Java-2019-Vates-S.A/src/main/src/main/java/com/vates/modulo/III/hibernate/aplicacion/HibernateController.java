@@ -40,5 +40,14 @@ public class HibernateController {
             }
             e.printStackTrace();
         }
+
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        // comenzamos la transacción
+        transaction = session.beginTransaction();
+        // eliminamos el objeto
+        session.remove(producto);
+        // realizamos el commit sobre la transacción
+        transaction.commit();
+        session.close();
     }
 }
