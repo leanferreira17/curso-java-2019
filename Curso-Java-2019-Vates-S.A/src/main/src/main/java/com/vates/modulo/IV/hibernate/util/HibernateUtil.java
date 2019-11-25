@@ -1,4 +1,4 @@
-package com.vates.modulo.III.hibernate.util;
+package com.vates.modulo.IV.hibernate.util;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;

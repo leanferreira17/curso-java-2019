@@ -1,4 +1,4 @@
-package com.vates.modulo.III.hibernate.entidades;
+package com.vates.modulo.IV.hibernate.entidades;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

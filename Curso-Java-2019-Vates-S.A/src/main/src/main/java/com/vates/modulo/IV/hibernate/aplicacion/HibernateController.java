@@ -1,7 +1,7 @@
-package com.vates.modulo.III.hibernate.aplicacion;
+package com.vates.modulo.IV.hibernate.aplicacion;
 
-import com.vates.modulo.III.hibernate.entidades.Producto;
-import com.vates.modulo.III.hibernate.util.HibernateUtil;
+import com.vates.modulo.IV.hibernate.entidades.Producto;
+import com.vates.modulo.IV.hibernate.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
