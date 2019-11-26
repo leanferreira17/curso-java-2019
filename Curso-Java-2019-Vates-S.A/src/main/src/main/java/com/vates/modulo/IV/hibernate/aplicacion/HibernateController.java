@@ -8,9 +8,11 @@ import org.hibernate.Transaction;
 import java.util.List;
 
 public class HibernateController {
+
     public static void main(String[] args) {
 
         Producto producto = new Producto("Tv", "Televisor led 55", 7899.09f);
+        Producto producto2 = new Producto("Radio", "Radio transmisor", 1000);
 
         Transaction transaction = null;
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
@@ -18,6 +20,7 @@ public class HibernateController {
             transaction = session.beginTransaction();
             // guardamos el objeto
             session.save(producto);
+            session.save(producto2);
 
             // realizamos el commit sobre la transacción
             transaction.commit();
@@ -49,5 +52,20 @@ public class HibernateController {
         // realizamos el commit sobre la transacción
         transaction.commit();
         session.close();
+
+        try (Session session2 = HibernateUtil.getSessionFactory().openSession()) {
+            List<Producto> productos = session2.createQuery("from Producto", Producto.class).list();
+
+            for (Producto p : productos) {
+                System.out.println(p.toString());
+            }
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+        }
+
     }
+
 }
