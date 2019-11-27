@@ -1,8 +1,10 @@
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/I/clases/ClaseEstatica.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/III/herramientas/CalculadoraDeTiempoDeEjecucion.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/I/herencia/ClaseC.java
+/home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/IV/hibernate/aplicacion/HibernateController.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/I/clases/ClaseAbstracta.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/III/interfaces/Presionable.java
+/home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/IV/unitarios/Operaciones.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/II/excepciones/SueldoNegativoException.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/I/ejemplos/EjemploDeComposicionDesdeLaSubClase.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/I/jvm/JVM.java
@@ -10,7 +12,6 @@
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/III/clases/CustomCollectionImpl.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/I/controladores/ControladorDeSobrecargaDeMetodos.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/I/herencia/ClaseA.java
-/home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/III/hibernate/aplicacion/ProductoController.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/III/controladores/ControladorDeInterfaz.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/I/controladores/ControladorDeTiposDeClases.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/I/publico/ClaseConMiembrosPublicos.java
@@ -18,6 +19,7 @@
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/II/enums/Categoria.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/II/modelo/RRHH.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/III/patrones/EjemploDePatronBuilder.java
+/home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/IV/hibernate/util/HibernateUtil.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/I/protegido/ClaseConMiembrosProtegidos.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/III/genericos/ClaseGenerica.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/I/polimorfismo/EjemploPolimorfismo.java
@@ -26,10 +28,10 @@
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/I/controladores/ControladorDeHerencia.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/II/controlador/ControladorDeAviones.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/I/privado/ClaseConMiembrosPrivados.java
+/home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/IV/hibernate/entidades/Producto.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/III/genericos/ClaseNoGenerica.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/I/herencia/ClaseB.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/I/ejemplos/EjemploHerenciaCompuesta.java
-/home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/III/hibernate/entidades/Producto.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/II/modelo/Programador.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/II/enums/Clase.java
 /home/lean/IdeaProjects/curso-java-2019/Curso-Java-2019-Vates-S.A/src/main/src/main/java/com/vates/modulo/III/patrones/Singleton.java
