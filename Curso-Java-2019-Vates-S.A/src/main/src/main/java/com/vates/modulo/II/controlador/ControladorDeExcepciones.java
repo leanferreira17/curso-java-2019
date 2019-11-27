@@ -22,7 +22,7 @@ public class ControladorDeExcepciones {
         }
     }
 
-    private static void dividirPorCero() throws IOException {
+    public static void dividirPorCero() throws IOException {
         int dividendo = 9;
         int divisor = 0;
 
