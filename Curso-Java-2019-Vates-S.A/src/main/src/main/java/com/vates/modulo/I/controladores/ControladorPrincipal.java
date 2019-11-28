@@ -8,7 +8,7 @@ public class ControladorPrincipal {
 
     public static void main(String[] args) {
         /*
-        * De la clase pública podemos obtener absolutamente todo
+        * De la clase pública podemos obtener absolutamente to do
         * */
         ClaseConMiembrosPublicos claseConMiembrosPublicos = new ClaseConMiembrosPublicos();
 
